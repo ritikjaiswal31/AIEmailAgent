@@ -1,10 +1,10 @@
-# 📧 AIMailAgent  
+# AIMailAgent 📧
 
 AIMailAgent is an **AI-powered email reply agent** that integrates seamlessly with Gmail. The project leverages **Spring Boot** for the backend, **React** for the frontend, **Spring AI** and **Google Gemini AI** for intelligent response generation, and a **Chrome Extension** to embed an "AI Reply" button directly into Gmail. With AIMailAgent, you can receive AI-suggested replies to emails in real-time, tested and validated through **REST APIs** with Postman.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **AI-Powered Email Reply:**  Automatically generate context-aware replies for received emails using Gemini AI.
 - **Chrome Extension Integration:**  Adds a custom "AI Reply" button inside Gmail for one-click AI-generated responses.
@@ -14,7 +14,7 @@ AIMailAgent is an **AI-powered email reply agent** that integrates seamlessly wi
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React  
 - **Backend:** Spring Boot  
@@ -24,7 +24,7 @@ AIMailAgent is an **AI-powered email reply agent** that integrates seamlessly wi
 
 ---
 
-## 📸 Screenshots  
+## Screenshots  
 
 Below are the key components of **AIMailAgent** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
 Replace the placeholders with actual screenshots from your project.  
