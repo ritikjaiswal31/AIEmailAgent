@@ -47,7 +47,9 @@ Replace the placeholders with actual screenshots from your project.
 
 <img width="868" height="661" alt="image" src="https://github.com/user-attachments/assets/0fe3e662-61a3-4bcc-acbf-b39d2c0a2a19" />
 
-<img width="880" height="673" alt="image" src="https://github.com/user-attachments/assets/d199a2a1-c6d1-4837-9542-37f3395b1d71" />
+<img width="868" height="664" alt="image" src="https://github.com/user-attachments/assets/1bc763bc-c179-41bf-86b4-181a6ef7f1ac" />
+
+<img width="877" height="667" alt="image" src="https://github.com/user-attachments/assets/c1c2f7b1-60bf-4308-aae0-f9072f0b583e" />
 
 ---
 
