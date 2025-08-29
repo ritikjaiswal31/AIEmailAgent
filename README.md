@@ -27,7 +27,6 @@ AIMailAgent is an **AI-powered email reply agent** that integrates seamlessly wi
 ## Screenshots  
 
 Below are the key components of **AIMailAgent** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
-Replace the placeholders with actual screenshots from your project.  
 
 ### AI Reply in Gmail
 
