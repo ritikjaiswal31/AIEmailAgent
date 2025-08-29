@@ -1,28 +1,17 @@
 # 📧 AIMailAgent  
 
 AIMailAgent is an **AI-powered email reply assistant** that integrates seamlessly with Gmail.  
-The project leverages **Spring Boot** for the backend, **React** for the frontend, **Spring AI** and **Google Gemini AI** for intelligent response generation, and a **Chrome Extension** to embed an "AI Reply" button directly into Gmail.  
-
-With AIMailAgent, you can receive AI-suggested replies to emails in real-time, tested and validated through **REST APIs** with Postman.
+The project leverages **Spring Boot** for the backend, **React** for the frontend, **Spring AI** and **Google Gemini AI** for intelligent response generation, and a **Chrome Extension** to embed an "AI Reply" button directly into Gmail. With AIMailAgent, you can receive AI-suggested replies to emails in real-time, tested and validated through **REST APIs** with Postman.
 
 ---
 
 ## 🚀 Features
 
-- **AI-Powered Email Reply**  
-  Automatically generate context-aware replies for received emails using Gemini AI.
-
-- **Chrome Extension Integration**  
-  Adds a custom "AI Reply" button inside Gmail for one-click AI-generated responses.
-
-- **Backend (Spring Boot + Spring AI)**  
-  Handles business logic, connects with Gemini AI APIs, and manages secure communication.
-
-- **Frontend (React)**  
-  Provides an intuitive web interface for configuring and testing the email agent.
-
-- **REST API Testing with Postman**  
-  API endpoints validated using Postman for reliable and scalable performance.
+- **AI-Powered Email Reply:**  Automatically generate context-aware replies for received emails using Gemini AI.
+- **Chrome Extension Integration:**  Adds a custom "AI Reply" button inside Gmail for one-click AI-generated responses.
+- **Backend (Spring Boot + Spring AI):**  Handles business logic, connects with Gemini AI APIs, and manages secure communication.
+- **Frontend (React):**  Provides an intuitive web interface for configuring and testing the email agent.
+- **REST API Testing with Postman:**  API endpoints validated using Postman for reliable and scalable performance.
 
 ---
 
@@ -57,7 +46,7 @@ Replace the placeholders with actual screenshots from your project.
 
 ### Frontend UI
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/907bf4cf-6d42-4733-adba-1cf4e03f6ea6" />
+<img width="868" height="661" alt="image" src="https://github.com/user-attachments/assets/0fe3e662-61a3-4bcc-acbf-b39d2c0a2a19" />
 
 <img width="880" height="673" alt="image" src="https://github.com/user-attachments/assets/d199a2a1-c6d1-4837-9542-37f3395b1d71" />
 
