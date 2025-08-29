@@ -36,27 +36,37 @@ With AIMailAgent, you can receive AI-suggested replies to emails in real-time, t
 
 ---
 
-## 📂 Repository
+## 📸 Screenshots  
 
-GitHub Repository: [AIMailAgent](https://github.com/ritikjaiswal31/AIEmailAgent)
+Below are the key components of **AIMailAgent** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
+Replace the placeholders with actual screenshots from your project.  
+
+### ![AI Reply in Gmail](
+
+<img width="1486" height="644" alt="image" src="https://github.com/user-attachments/assets/52f18005-dee4-40be-ad52-7eaab2651571" />
+
+<img width="1490" height="712" alt="image" src="https://github.com/user-attachments/assets/30fff2db-a3c6-4464-81c8-80865ac97426" />
+
+)  
+Demonstration of AI-powered replies generated directly inside Gmail.  
 
 ---
 
-## 📸 Screenshots
+### ![Chrome Extension](screenshots/extension.png)  
+A custom Gmail extension that adds an **AI Reply button** for one-click responses.  
 
-> Paste the following screenshots here after capturing them from your project:  
+---
 
-1. ✅ Postman - REST API Testing  
-2. ✅ Frontend Application (React UI)  
-3. ✅ Backend Application (Spring Boot Service)  
-4. ✅ Chrome Extension (AI Reply button in Gmail)  
-5. ✅ AI Reply Integration in Gmail  
+### ![Frontend UI](screenshots/frontend.png)  
+The web interface for managing, configuring, and testing the email agent.  
 
-Example placeholder format (replace with your actual screenshots):  
+---
 
-```markdown
-![Postman Testing](screenshots/postman.png)
-![Frontend](screenshots/frontend.png)
-![Backend](screenshots/backend.png)
-![Chrome Extension](screenshots/extension.png)
-![AI Reply in Gmail](screenshots/gmail-ai-reply.png)
+### ![Backend Service](screenshots/backend.png)  
+The backend service built with Spring Boot and Spring AI, integrated with Gemini AI.  
+
+---
+
+### ![Postman Testing](screenshots/postman.png)  
+Validation and testing of API endpoints using Postman.  
+
