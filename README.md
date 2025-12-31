@@ -1,26 +1,66 @@
-# AIEmailAgent 📧 (Intelligent Email Reply Agent)
+# AIEmailAgent 📧
+**Intelligent Email Reply Agent**
 
-AIEmailAgent is an **AI-powered email reply agent** that integrates seamlessly with Gmail. The project leverages **Spring Boot** for the backend, **React** for the frontend, **Spring AI** and **Google Gemini AI** for intelligent response generation, and a **Chrome Extension** to embed an "AI Reply" button directly into Gmail. With AIEmailAgent, you can receive AI-suggested replies to emails in real-time, tested and validated through **REST APIs** with Postman.
+AIEmailAgent is an intelligent email reply system that seamlessly integrates with **Gmail**, enabling users to generate **context-aware AI responses** in real time.  
+The application is built using **Spring Boot** and **Spring AI** on the backend, **React** on the frontend, and **Google Gemini AI** for natural language response generation. A **Chrome Extension** embeds AI functionality directly into the Gmail interface.
 
 ---
 
-## Features
+## Key Features
 
-- **AI-Powered Email Reply:**  Automatically generate context-aware replies for received emails using Gemini AI.
-- **Chrome Extension Integration:**  Adds a custom "AI Reply" button inside Gmail for one-click AI-generated responses.
-- **Backend (Spring Boot + Spring AI):**  Handles business logic, connects with Gemini AI APIs, and manages secure communication.
-- **Frontend (React):**  Provides an intuitive web interface for configuring and testing the email agent.
-- **REST API Testing with Postman:**  API endpoints validated using Postman for reliable and scalable performance.
+- **AI-Powered Email Reply Generation** using Google Gemini AI  
+- **Context-Aware Responses** based on email content  
+- **Chrome Extension Integration** with Gmail for one-click AI replies  
+- **RESTful APIs** for email processing and AI communication  
+- **Secure Backend Architecture** with Spring Boot  
+- **API Validation & Testing** using Postman  
+
+---
+
+## Architecture
+
+AIEmailAgent follows a **modular client-server architecture**:
+- Chrome Extension injects an **“AI Reply” button** into the Gmail UI  
+- Frontend (React) communicates with backend REST APIs  
+- Backend (Spring Boot + Spring AI) handles business logic and AI orchestration  
+- Google Gemini AI generates intelligent email responses  
+- APIs are designed for scalability, security, and testability  
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React  
-- **Backend:** Spring Boot  
-- **AI Technologies:** Spring AI, Google Gemini AI (API + Key)  
-- **REST API Testing:** Postman  
-- **Browser Extension:** Chrome Extension
+| Category | Technologies |
+|--------|--------------|
+| Frontend | React |
+| Backend | Spring Boot |
+| AI Integration | Spring AI, Google Gemini AI |
+| API Testing | Postman |
+| Browser Extension | Chrome Extension |
+| Communication | REST APIs |
+
+---
+
+## Modules
+
+| Module | Description |
+|------|-------------|
+| **Chrome Extension** | Injects the AI Reply button into Gmail |
+| **frontend-app** | React-based UI for configuration and testing |
+| **email-service** | Extracts and processes email content |
+| **ai-service** | Integrates with Google Gemini AI via Spring AI |
+| **api-layer** | Exposes REST endpoints for frontend and extension |
+
+---
+
+## Application Flow
+
+1. User opens an email in **Gmail**
+2. Chrome Extension injects the **AI Reply** button
+3. Email content is sent to the backend via REST API
+4. Backend processes the request using **Spring AI**
+5. **Google Gemini AI** generates a context-aware reply
+6. The AI-generated response is returned and displayed to the user
 
 ---
 
