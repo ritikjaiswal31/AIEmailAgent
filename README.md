@@ -44,11 +44,13 @@ Below are the key components of **AIEmailAgent** shown in a logical order, start
 
 ### Frontend UI
 
-<img width="868" height="661" alt="image" src="https://github.com/user-attachments/assets/0fe3e662-61a3-4bcc-acbf-b39d2c0a2a19" />
+<img width="1091" height="632" alt="Screenshot 2026-01-01 034154" src="https://github.com/user-attachments/assets/02a1c7ec-d9fd-498f-b6e6-fbd60f670ed2" />
 
-<img width="868" height="664" alt="image" src="https://github.com/user-attachments/assets/1bc763bc-c179-41bf-86b4-181a6ef7f1ac" />
+<img width="1077" height="758" alt="Screenshot 2026-01-01 034230" src="https://github.com/user-attachments/assets/27594374-0863-4c62-914e-47ed2296d195" />
 
-<img width="877" height="667" alt="image" src="https://github.com/user-attachments/assets/c1c2f7b1-60bf-4308-aae0-f9072f0b583e" />
+<img width="1071" height="762" alt="Screenshot 2026-01-01 034251" src="https://github.com/user-attachments/assets/c5b1c7bf-3d18-407f-be14-60818e11b7c4" />
+
+<img width="1074" height="756" alt="Screenshot 2026-01-01 034311" src="https://github.com/user-attachments/assets/4c292404-117e-4129-b85d-e37a5146c218" />
 
 ---
 
