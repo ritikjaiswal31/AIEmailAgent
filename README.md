@@ -1,8 +1,8 @@
-# AIEmailAgent 📧
-**Intelligent Email Reply Agent**
+# AIMailFlow 📧
+**AI-Powered Email Reply Flow**
 
-AIEmailAgent is an intelligent email reply system that seamlessly integrates with **Gmail**, enabling users to generate **context-aware AI responses** in real time.  
-The application is built using **Spring Boot** and **Spring AI** on the backend, **React** on the frontend, and **Google Gemini AI** for natural language response generation. A **Chrome Extension** embeds AI functionality directly into the Gmail interface.
+## Project Overview
+AIMailFlow is an AI-powered email response system that integrates with Gmail to generate context-aware replies in real time. The application is built using Spring Boot and Spring AI on the backend, React on the frontend, and Google Gemini AI for intelligent response generation. A Chrome Extension seamlessly embeds AI-assisted reply functionality directly into the Gmail interface to streamline email workflows and improve response efficiency.
 
 ---
 
@@ -19,7 +19,7 @@ The application is built using **Spring Boot** and **Spring AI** on the backend,
 
 ## Architecture
 
-AIEmailAgent follows a **modular client-server architecture**:
+AIMailFlow follows a **modular client-server architecture**:
 - Chrome Extension injects an **“AI Reply” button** into the Gmail UI  
 - Frontend (React) communicates with backend REST APIs  
 - Backend (Spring Boot + Spring AI) handles business logic and AI orchestration  
@@ -66,7 +66,7 @@ AIEmailAgent follows a **modular client-server architecture**:
 
 ## Screenshots  
 
-Below are the key components of **AIEmailAgent** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
+Below are the key components of **AIMailFlow** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
 
 ### AI Reply in Gmail
 
