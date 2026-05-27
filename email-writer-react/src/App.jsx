@@ -30,7 +30,7 @@ function App() {
   return (
     <Container maxWidth="md" sx={{py:4}}>
       <Typography variant='h3' component="h1" gutterBottom>
-        AIEmailAgent
+        AIMailFlow
       </Typography>
 
       <Box sx={{ mx: 3 }}>
