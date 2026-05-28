@@ -8,7 +8,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-# Key Features
+## Key Features
 
 * AI-powered email reply generation using **Gemini AI**
 * Context-aware response generation based on email content
@@ -20,7 +20,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 | Category          | Technologies                |
 | ----------------- | --------------------------- |
@@ -33,11 +33,11 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-# High-Level Design (HLD)
+## High-Level Design (HLD)
 
 AIMailFlow follows a modular client-server architecture for seamless AI-assisted email response generation.
 
-## Core Components
+### Core Components
 
 ### 1. Chrome Extension
 
@@ -63,7 +63,7 @@ AIMailFlow follows a modular client-server architecture for seamless AI-assisted
 
 ---
 
-# Low-Level Design (LLD)
+## Low-Level Design (LLD)
 
 AIMailFlow follows a layered backend design for handling email processing, AI request orchestration.
 
@@ -87,14 +87,15 @@ AIMailFlow follows a layered backend design for handling email processing, AI re
 
 ---
 
-# Backend Engineering & AI Integration
+## Backend Engineering & AI Integration
 
 AIMailFlow implements a backend-driven AI orchestration workflow using Spring Boot and WebClient for real-time communication with Gemini AI APIs. The backend is responsible for processing email content, dynamically generating prompts, handling asynchronous API communication, parsing nested JSON responses and returning context-aware email replies to the frontend and Chrome Extension. Instead of relying on higher-level AI abstraction frameworks, the project manually manages request payload construction, response extraction and API orchestration logic, providing deeper control over backend processing and external AI service integration. The system also supports scalable REST-based communication between Gmail-integrated browser workflows, frontend components and backend services for seamless real-time AI-assisted email generation.
 
 ---
 
-# Architecture Flow
+## Architecture Flow
 
+```text
 User Opens Gmail
         ↓
 Chrome Extension Injects "AI Reply" Button
@@ -105,30 +106,11 @@ REST API Request Sent To Spring Boot Backend
         ↓
 Backend Builds Prompt & Sends Request Using WebClient
         ↓
-Google Gemini AI Generates Context-Aware Reply
+Gemini AI Generates Context-Aware Reply
         ↓
 Backend Processes AI Response
         ↓
 Generated Reply Returned To Gmail UI
-
----
-
-# Application Flow
-
-1. User opens an email in Gmail
-2. Chrome Extension injects the AI Reply button
-3. Email content is extracted from Gmail UI
-4. Backend receives the email content via REST API
-5. Prompt is dynamically generated based on email tone and content
-6. WebClient sends request to Gemini AI API
-7. AI-generated response is parsed and processed
-8. Final response is displayed inside Gmail for one-click usage
-
----
-
-# Conclusion
-
-AIMailFlow demonstrates the integration of AI-powered workflows with real-world browser automation and backend API orchestration. The project combines Spring Boot, REST APIs, Chrome Extension development and Gemini AI integration to deliver seamless AI-assisted email reply generation directly within Gmail.
 
 ---
 
