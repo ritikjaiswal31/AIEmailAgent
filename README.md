@@ -65,21 +65,30 @@ AIMailFlow follows a modular client-server architecture for seamless AI-assisted
 
 # Low-Level Design (LLD)
 
-## Backend Modules
+## Internal Backend Flow
 
-| Module                     | Responsibility                                                  |
-| -------------------------- | --------------------------------------------------------------- |
-| `EmailGeneratorController` | Exposes REST endpoints for email reply generation               |
-| `EmailGeneratorService`    | Handles prompt creation, API communication and response parsing |
-| `EmailRequest`             | DTO for email content and tone handling                         |
-| `WebClient`                | Sends asynchronous HTTP requests to Gemini AI APIs              |
-| `ObjectMapper`             | Parses AI-generated JSON responses                              |
+1. `EmailGeneratorController`
+   - Receives email content requests from frontend and Chrome Extension
+   - Exposes REST endpoints for AI reply generation
+
+2. `EmailGeneratorService`
+   - Builds dynamic prompts using email content and tone
+   - Handles Gemini AI API communication using WebClient
+   - Processes and parses AI-generated responses
+
+3. `EmailRequest`
+   - DTO used for transferring email content and tone data
+
+4. `WebClient`
+   - Sends asynchronous HTTP requests to Gemini AI APIs
+
+5. `ObjectMapper`
+   - Extracts and parses generated response content from JSON payloads
 
 ---
 
 # Architecture Flow
 
-```text id="3k9p2x"
 User Opens Gmail
         ↓
 Chrome Extension Injects "AI Reply" Button
