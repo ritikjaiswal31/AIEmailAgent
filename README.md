@@ -65,7 +65,7 @@ AIMailFlow follows a modular client-server architecture for seamless AI-assisted
 
 # Low-Level Design (LLD)
 
-## Internal Backend Flow
+AIMailFlow follows a layered backend design for handling email processing, AI request orchestration and real-time response generation.
 
 1. `EmailGeneratorController`
    - Receives email content requests from frontend and Chrome Extension
