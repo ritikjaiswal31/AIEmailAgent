@@ -1,16 +1,16 @@
-# AIMailFlow 📧
+## AIMailFlow 📧
 
 ### AI Assisted Email Workflow Automation System
 
 ---
 
-## Project Overview
+### Project Overview
 
 AIMailFlow is an AI-powered email response system that integrates with Gmail to generate context-aware replies in real time. The application is built using **Spring Boot** on the backend, **React** on the frontend, and **Gemini AI** for intelligent email response generation. A **Chrome Extension** seamlessly injects AI-assisted reply functionality directly into the Gmail interface to streamline email communication and improve response efficiency.
 
 ---
 
-## Real-World Use Case
+### Real-World Use Case
 
 * In many professional environments, employees, support teams and business professionals spend significant time drafting repetitive email responses such as meeting confirmations, client follow-ups, operational communications and support acknowledgements.
 
@@ -30,7 +30,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-## Key Features
+### Key Features
 
 * AI-powered email reply generation using **Gemini AI**
 * Context-aware response generation based on email content
@@ -42,7 +42,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-## Tech Stack
+### Tech Stack
 
 | Category          | Technologies         |
 | ----------------- | -------------------- |
@@ -55,23 +55,23 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-## High-Level Design (HLD)
+### High-Level Design (HLD)
 
 <img width="1536" height="517" alt="AIMailFlow HLD" src="https://github.com/user-attachments/assets/136ea0f9-9bfe-4d6d-9dc2-e45d29e64810" />
 
 ---
 
-## Low-Level Design (LLD)
+### Low-Level Design (LLD)
 
 <img width="1536" height="506" alt="AIMailFlow LLD" src="https://github.com/user-attachments/assets/802a188e-5569-4046-bae3-d2562990198e" />
 
 ---
 
-## Screenshots  
+### Screenshots  
 
 Below are the key components of **AIMailFlow** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
 
-### AI Reply in Gmail
+#### AI Reply in Gmail
 
 <img width="1486" height="644" alt="image" src="https://github.com/user-attachments/assets/52f18005-dee4-40be-ad52-7eaab2651571" />
 
@@ -85,7 +85,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Frontend UI
+#### Frontend Service
 
 <img width="1429" height="886" alt="image" src="https://github.com/user-attachments/assets/6bb40bb4-55f7-46a8-a32c-774039af2634" />
 
@@ -97,7 +97,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Backend Service 
+#### Backend Service 
 
 <img width="1502" height="648" alt="image" src="https://github.com/user-attachments/assets/5dcfbcc3-bf2b-4114-97e9-a8431aa3ad7a" />
 
@@ -105,7 +105,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Postman Testing
+#### Postman Testing
 
 <img width="1417" height="657" alt="image" src="https://github.com/user-attachments/assets/0baf852f-7de6-4a6e-8a24-52b2170a3784" />
 
