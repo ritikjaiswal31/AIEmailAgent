@@ -2,9 +2,31 @@
 
 ### AI-Powered Email Reply Flow
 
+---
+
 ## Project Overview
 
 AIMailFlow is an AI-powered email response system that integrates with Gmail to generate context-aware replies in real time. The application is built using **Spring Boot** on the backend, **React** on the frontend, and **Gemini AI** for intelligent email response generation. A **Chrome Extension** seamlessly injects AI-assisted reply functionality directly into the Gmail interface to streamline email communication and improve response efficiency.
+
+---
+
+## Real-World Use Case
+
+* In many professional environments, employees, support teams and business professionals spend significant time drafting repetitive email responses such as meeting confirmations, client follow-ups, operational communications and support acknowledgements.
+
+* Repeatedly writing these responses increases manual effort, slows communication workflows and reduces overall productivity.
+
+* AIMailFlow was designed to solve this problem by integrating AI-assisted email reply generation directly into Gmail.
+
+* Instead of switching between external AI tools and email clients, users can generate context-aware responses within their existing Gmail workflow using a single click.
+
+* The system combines browser automation, backend orchestration and AI-powered response generation to streamline routine communication workflows.
+
+* The Chrome Extension captures email content directly from Gmail, while the Spring Boot backend processes requests, dynamically constructs prompts and communicates with Gemini AI APIs using WebClient.
+
+* The generated response is then returned to the Gmail interface in real time for seamless AI-assisted email drafting.
+
+* The workflow can be applied to several real-world scenarios including customer support communication, HR response automation, client engagement workflows, sales outreach and repetitive enterprise email handling where response efficiency and productivity are critical.
 
 ---
 
@@ -22,14 +44,14 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ## Tech Stack
 
-| Category          | Technologies                |
-| ----------------- | --------------------------- |
-| Backend           | Java, Spring Boot           |
-| Frontend          | React                       |
+| Category          | Technologies         |
+| ----------------- | -------------------- |
+| Backend           | Java, Spring Boot    |
+| Frontend          | React                |
 | AI Integration    | Gemini AI, WebClient |
-| Browser Extension | Chrome Extension            |
-| API Testing       | Postman                     |
-| Communication     | REST APIs                   |
+| Browser Extension | Chrome Extension     |
+| API Testing       | Postman              |
+| Communication     | REST APIs            |
 
 ---
 
@@ -65,31 +87,40 @@ AIMailFlow follows a modular client-server architecture for seamless AI-assisted
 
 ## Low-Level Design (LLD)
 
-AIMailFlow follows a layered backend design for handling email processing, AI request orchestration.
+AIMailFlow follows a layered backend design for handling email processing and AI request orchestration.
+
+### Internal Backend Components
 
 1. `EmailGeneratorController`
-   - Receives email content requests from frontend and Chrome Extension
-   - Exposes REST endpoints for AI reply generation
+
+   * Receives email content requests from frontend and Chrome Extension
+   * Exposes REST endpoints for AI reply generation
 
 2. `EmailGeneratorService`
-   - Builds dynamic prompts using email content and tone
-   - Handles Gemini AI API communication using WebClient
-   - Processes and parses AI-generated responses
+
+   * Builds dynamic prompts using email content and tone
+   * Handles Gemini AI API communication using WebClient
+   * Processes and parses AI-generated responses
 
 3. `EmailRequest`
-   - DTO used for transferring email content and tone data
+
+   * DTO used for transferring email content and tone data
 
 4. `WebClient`
-   - Sends asynchronous HTTP requests to Gemini AI APIs
+
+   * Sends asynchronous HTTP requests to Gemini AI APIs
 
 5. `ObjectMapper`
-   - Extracts and parses generated response content from JSON payloads
+
+   * Extracts and parses generated response content from JSON payloads
 
 ---
 
 ## Backend Engineering & AI Integration
 
-AIMailFlow implements a backend-driven AI orchestration workflow using Spring Boot and WebClient for real-time communication with Gemini AI APIs. The backend is responsible for processing email content, dynamically generating prompts, handling asynchronous API communication, parsing nested JSON responses and returning context-aware email replies to the frontend and Chrome Extension. Instead of relying on higher-level AI abstraction frameworks, the project manually manages request payload construction, response extraction and API orchestration logic, providing deeper control over backend processing and external AI service integration. The system also supports scalable REST-based communication between Gmail-integrated browser workflows, frontend components and backend services for seamless real-time AI-assisted email generation.
+AIMailFlow implements a backend-driven AI orchestration workflow using Spring Boot and WebClient for real-time communication with Gemini AI APIs. The backend is responsible for processing email content, dynamically generating prompts, handling asynchronous API communication, parsing nested JSON responses and returning context-aware email replies to the frontend and Chrome Extension.
+
+Instead of relying on higher-level AI abstraction frameworks, the project manually manages request payload construction, response extraction and API orchestration logic, providing deeper control over backend processing and external AI service integration. The system also supports scalable REST-based communication between Gmail-integrated browser workflows, frontend components and backend services for seamless real-time AI-assisted email generation.
 
 ---
 
@@ -112,6 +143,7 @@ Backend Processes AI Response
         ↓
 Generated Reply Returned To Gmail UI
 ```
+
 ---
 
 ## Screenshots  
