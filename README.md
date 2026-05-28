@@ -111,7 +111,7 @@ Gemini AI Generates Context-Aware Reply
 Backend Processes AI Response
         ↓
 Generated Reply Returned To Gmail UI
-
+```
 ---
 
 ## Screenshots  
