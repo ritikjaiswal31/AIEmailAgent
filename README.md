@@ -1,6 +1,6 @@
 # AIMailFlow 📧
 
-### AI-Powered Email Reply Flow
+### AI Assisted Email Workflow Automation System
 
 ---
 
