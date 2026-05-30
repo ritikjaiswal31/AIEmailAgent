@@ -56,54 +56,14 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 ---
 
 ### High-Level Design (HLD)
-```
-┌────────────────────┐
-│     Gmail UI       │
-│                    │
-│ User opens email   │
-│ Clicks AI Reply    │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Chrome Extension   │
-│                    │
-│ Content Script     │
-│ DOM Manipulation   │
-│ Toolbar Injection  │
-│ Email Extraction   │
-└─────────┬──────────┘
-          │ HTTPS
-          ▼
-┌────────────────────┐
-│ Spring Boot API    │
-│                    │
-│ Request Validation │
-│ Prompt Building    │
-│ Gemini Orchestration│
-└─────────┬──────────┘
-          │ HTTPS
-          ▼
-┌────────────────────┐
-│ Gemini API         │
-│                    │
-│ Generate Reply     │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Gmail Compose Box  │
-│                    │
-│ Reply Inserted     │
-│ User Reviews       │
-│ User Sends Email   │
-└────────────────────┘
-```
+
+<img width="733" height="951" alt="AIMailFlow HLD" src="https://github.com/user-attachments/assets/48b218da-d87e-4226-859c-fab099e7fe25" />
+
 ---
 
 ### Low-Level Design (LLD)
 
-<img width="1536" height="506" alt="AIMailFlow LLD" src="https://github.com/user-attachments/assets/802a188e-5569-4046-bae3-d2562990198e" />
+<img width="802" height="954" alt="AIMailFlow LLD" src="https://github.com/user-attachments/assets/e92f7640-0449-4880-b267-d8dbf0464ef4" />
 
 ---
 
