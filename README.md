@@ -56,7 +56,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 ---
 
 ### High-Level Design (HLD)
-
+```
 ┌────────────────────┐
 │     Gmail UI       │
 │                    │
@@ -98,7 +98,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 │ User Reviews       │
 │ User Sends Email   │
 └────────────────────┘
-
+```
 ---
 
 ### Low-Level Design (LLD)
