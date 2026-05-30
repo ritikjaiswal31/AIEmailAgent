@@ -60,7 +60,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/48b218da-d87e-4226-859c-fab099e7fe25"
        alt="AIMailFlow HLD"
-       width="550"/>
+       width="500"/>
 </p>
 
 ---
@@ -70,7 +70,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e92f7640-0449-4880-b267-d8dbf0464ef4"
        alt="AIMailFlow LLD"
-       width="550"/>
+       width="500"/>
 </p>
 
 ---
