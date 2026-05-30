@@ -12,21 +12,15 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ### Real-World Use Case
 
-* In many professional environments, employees, support teams and business professionals spend significant time drafting repetitive email responses such as meeting confirmations, client follow-ups, operational communications and support acknowledgements.
+* AIMailFlow enables AI-powered email reply generation directly within Gmail, eliminating the need to switch between external AI tools and email clients.
 
-* Repeatedly writing these responses increases manual effort, slows communication workflows and reduces overall productivity.
+* The Chrome Extension captures email content from Gmail and sends it to a Spring Boot backend for processing and prompt orchestration.
 
-* AIMailFlow was designed to solve this problem by integrating AI-assisted email reply generation directly into Gmail.
+* The backend communicates with Gemini AI APIs to generate context-aware responses and returns them to the Gmail interface in real time.
 
-* Instead of switching between external AI tools and email clients, users can generate context-aware responses within their existing Gmail workflow using a single click.
+* The solution improves communication efficiency and productivity across customer support, HR operations, sales outreach, client engagement, and other enterprise workflows.
 
-* The system combines browser automation, backend orchestration and AI-powered response generation to streamline routine communication workflows.
-
-* The Chrome Extension captures email content directly from Gmail, while the Spring Boot backend processes requests, dynamically constructs prompts and communicates with Gemini AI APIs using WebClient.
-
-* The generated response is then returned to the Gmail interface in real time for seamless AI-assisted email drafting.
-
-* The workflow can be applied to several real-world scenarios including customer support communication, HR response automation, client engagement workflows, sales outreach and repetitive enterprise email handling where response efficiency and productivity are critical.
+* In many professional environments, employees spend significant time drafting repetitive emails such as client follow-ups, meeting confirmations, support responses, and operational communications, making automation highly valuable.
 
 ---
 
@@ -70,7 +64,7 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e92f7640-0449-4880-b267-d8dbf0464ef4"
        alt="AIMailFlow LLD"
-       width="400"/>
+       width="450"/>
 </p>
 
 ---
