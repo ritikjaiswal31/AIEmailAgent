@@ -1,14 +1,36 @@
-# AIMailFlow 📧
+## AIMailFlow 📧
 
-### AI-Powered Email Reply Flow
+### AI Assisted Email Automation System
 
-## Project Overview
+---
+
+### Project Overview
 
 AIMailFlow is an AI-powered email response system that integrates with Gmail to generate context-aware replies in real time. The application is built using **Spring Boot** on the backend, **React** on the frontend, and **Gemini AI** for intelligent email response generation. A **Chrome Extension** seamlessly injects AI-assisted reply functionality directly into the Gmail interface to streamline email communication and improve response efficiency.
 
 ---
 
-## Key Features
+### Real-World Use Case
+
+* In many professional environments, employees, support teams and business professionals spend significant time drafting repetitive email responses such as meeting confirmations, client follow-ups, operational communications and support acknowledgements.
+
+* Repeatedly writing these responses increases manual effort, slows communication workflows and reduces overall productivity.
+
+* AIMailFlow was designed to solve this problem by integrating AI-assisted email reply generation directly into Gmail.
+
+* Instead of switching between external AI tools and email clients, users can generate context-aware responses within their existing Gmail workflow using a single click.
+
+* The system combines browser automation, backend orchestration and AI-powered response generation to streamline routine communication workflows.
+
+* The Chrome Extension captures email content directly from Gmail, while the Spring Boot backend processes requests, dynamically constructs prompts and communicates with Gemini AI APIs using WebClient.
+
+* The generated response is then returned to the Gmail interface in real time for seamless AI-assisted email drafting.
+
+* The workflow can be applied to several real-world scenarios including customer support communication, HR response automation, client engagement workflows, sales outreach and repetitive enterprise email handling where response efficiency and productivity are critical.
+
+---
+
+### Key Features
 
 * AI-powered email reply generation using **Gemini AI**
 * Context-aware response generation based on email content
@@ -20,105 +42,76 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-## Tech Stack
+### Tech Stack
 
-| Category          | Technologies                |
-| ----------------- | --------------------------- |
-| Backend           | Java, Spring Boot           |
-| Frontend          | React                       |
+| Category          | Technologies         |
+| ----------------- | -------------------- |
+| Backend           | Java, Spring Boot    |
+| Frontend          | React                |
 | AI Integration    | Gemini AI, WebClient |
-| Browser Extension | Chrome Extension            |
-| API Testing       | Postman                     |
-| Communication     | REST APIs                   |
+| Browser Extension | Chrome Extension     |
+| API Testing       | Postman              |
+| Communication     | REST APIs            |
 
 ---
 
-## High-Level Design (HLD)
-
-AIMailFlow follows a modular client-server architecture for seamless AI-assisted email response generation.
-
-### Core Components
-
-### 1. Chrome Extension
-
-* Injects the **AI Reply** button into the Gmail compose interface
-* Captures email content directly from Gmail
-* Sends requests to backend APIs
-
-### 2. Frontend Application
-
-* React-based interface for testing and configuration
-* Allows users to generate AI replies outside Gmail workflows
-
-### 3. Backend Service
-
-* Built using Spring Boot REST APIs
-* Handles request processing, prompt generation and AI orchestration
-* Communicates with Gemini AI APIs using WebClient
-
-### 4. Gemini AI
-
-* Generates context-aware email replies
-* Supports dynamic response generation based on email tone and content
-
----
-
-## Low-Level Design (LLD)
-
-AIMailFlow follows a layered backend design for handling email processing, AI request orchestration.
-
-1. `EmailGeneratorController`
-   - Receives email content requests from frontend and Chrome Extension
-   - Exposes REST endpoints for AI reply generation
-
-2. `EmailGeneratorService`
-   - Builds dynamic prompts using email content and tone
-   - Handles Gemini AI API communication using WebClient
-   - Processes and parses AI-generated responses
-
-3. `EmailRequest`
-   - DTO used for transferring email content and tone data
-
-4. `WebClient`
-   - Sends asynchronous HTTP requests to Gemini AI APIs
-
-5. `ObjectMapper`
-   - Extracts and parses generated response content from JSON payloads
-
----
-
-## Backend Engineering & AI Integration
-
-AIMailFlow implements a backend-driven AI orchestration workflow using Spring Boot and WebClient for real-time communication with Gemini AI APIs. The backend is responsible for processing email content, dynamically generating prompts, handling asynchronous API communication, parsing nested JSON responses and returning context-aware email replies to the frontend and Chrome Extension. Instead of relying on higher-level AI abstraction frameworks, the project manually manages request payload construction, response extraction and API orchestration logic, providing deeper control over backend processing and external AI service integration. The system also supports scalable REST-based communication between Gmail-integrated browser workflows, frontend components and backend services for seamless real-time AI-assisted email generation.
-
----
-
-## Architecture Flow
-
-```text
-User Opens Gmail
-        ↓
-Chrome Extension Injects "AI Reply" Button
-        ↓
-Email Content Extracted From Gmail
-        ↓
-REST API Request Sent To Spring Boot Backend
-        ↓
-Backend Builds Prompt & Sends Request Using WebClient
-        ↓
-Gemini AI Generates Context-Aware Reply
-        ↓
-Backend Processes AI Response
-        ↓
-Generated Reply Returned To Gmail UI
+### High-Level Design (HLD)
+```
+┌────────────────────┐
+│     Gmail UI       │
+│                    │
+│ User opens email   │
+│ Clicks AI Reply    │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Chrome Extension   │
+│                    │
+│ Content Script     │
+│ DOM Manipulation   │
+│ Toolbar Injection  │
+│ Email Extraction   │
+└─────────┬──────────┘
+          │ HTTPS
+          ▼
+┌────────────────────┐
+│ Spring Boot API    │
+│                    │
+│ Request Validation │
+│ Prompt Building    │
+│ Gemini Orchestration│
+└─────────┬──────────┘
+          │ HTTPS
+          ▼
+┌────────────────────┐
+│ Gemini API         │
+│                    │
+│ Generate Reply     │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Gmail Compose Box  │
+│                    │
+│ Reply Inserted     │
+│ User Reviews       │
+│ User Sends Email   │
+└────────────────────┘
 ```
 ---
 
-## Screenshots  
+### Low-Level Design (LLD)
+
+<img width="1536" height="506" alt="AIMailFlow LLD" src="https://github.com/user-attachments/assets/802a188e-5569-4046-bae3-d2562990198e" />
+
+---
+
+### Screenshots  
 
 Below are the key components of **AIMailFlow** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
 
-### AI Reply in Gmail
+#### AI Reply in Gmail
 
 <img width="1486" height="644" alt="image" src="https://github.com/user-attachments/assets/52f18005-dee4-40be-ad52-7eaab2651571" />
 
@@ -132,7 +125,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Frontend UI
+#### Frontend Service
 
 <img width="1429" height="886" alt="image" src="https://github.com/user-attachments/assets/6bb40bb4-55f7-46a8-a32c-774039af2634" />
 
@@ -144,7 +137,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Backend Service 
+#### Backend Service 
 
 <img width="1502" height="648" alt="image" src="https://github.com/user-attachments/assets/5dcfbcc3-bf2b-4114-97e9-a8431aa3ad7a" />
 
@@ -152,7 +145,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Postman Testing
+#### Postman Testing
 
 <img width="1417" height="657" alt="image" src="https://github.com/user-attachments/assets/0baf852f-7de6-4a6e-8a24-52b2170a3784" />
 
