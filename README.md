@@ -49,26 +49,6 @@ AIMailFlow is an AI-powered email response system that integrates with Gmail to 
 
 ---
 
-### High-Level Design (HLD)
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/48b218da-d87e-4226-859c-fab099e7fe25"
-       alt="AIMailFlow HLD"
-       width="400"/>
-</p>
-
----
-
-### Low-Level Design (LLD)
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/e92f7640-0449-4880-b267-d8dbf0464ef4"
-       alt="AIMailFlow LLD"
-       width="450"/>
-</p>
-
----
-
 ### Screenshots  
 
 Below are the key components of **AIMailFlow** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
