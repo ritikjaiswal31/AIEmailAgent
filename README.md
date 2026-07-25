@@ -1,59 +1,93 @@
-## AIMailFlow 📧
-
-### AI Assisted Email Automation System
+## AIMailFlow
 
 ---
 
 ### Project Overview
 
-AIMailFlow is an AI-powered email response system that integrates with Gmail to generate context-aware replies in real time. The application is built using **Spring Boot** on the backend, **React** on the frontend, and **Gemini AI** for intelligent email response generation. A **Chrome Extension** seamlessly injects AI-assisted reply functionality directly into the Gmail interface to streamline email communication and improve response efficiency.
-
----
-
-### Real-World Use Case
-
-* AIMailFlow enables AI-powered email reply generation directly within Gmail, eliminating the need to switch between external AI tools and email clients.
-
-* The Chrome Extension captures email content from Gmail and sends it to a Spring Boot backend for processing and prompt orchestration.
-
-* The backend communicates with Gemini AI APIs to generate context-aware responses and returns them to the Gmail interface in real time.
-
-* The solution improves communication efficiency and productivity across customer support, HR operations, sales outreach, client engagement, and other enterprise workflows.
-
-* In many professional environments, employees spend significant time drafting repetitive emails such as client follow-ups, meeting confirmations, support responses, and operational communications, making automation highly valuable.
+AIMailFlow is an AI-powered email response system that generates context-aware email replies using **Gemini AI**. The application is built using **Spring Boot** for the backend and **React** for the frontend, with a **Chrome Extension** integrated into Gmail for generating AI-assisted replies directly within the email interface. The backend processes email content, communicates with Gemini AI, and returns generated responses through REST APIs.
 
 ---
 
 ### Key Features
 
 * AI-powered email reply generation using **Gemini AI**
-* Context-aware response generation based on email content
-* Gmail-integrated Chrome Extension for one-click AI replies
-* RESTful APIs for email processing and AI communication
-* Real-time backend request handling using **WebClient**
-* Browser-assisted workflow integration within Gmail
-* API testing and validation using **Postman**
+* Context-aware responses based on email content and selected tone
+* Gmail-integrated **Chrome Extension** for one-click AI reply generation
+* REST API integration between the Chrome Extension, frontend, and Spring Boot backend
+* Backend integration with Gemini AI using **WebClient**
 
 ---
 
 ### Tech Stack
 
-| Category          | Technologies         |
-| ----------------- | -------------------- |
-| Backend           | Java, Spring Boot    |
-| Frontend          | React                |
-| AI Integration    | Gemini AI, WebClient |
-| Browser Extension | Chrome Extension     |
-| API Testing       | Postman              |
-| Communication     | REST APIs            |
+| Category          | Technologies     |
+| ----------------- | ---------------- |
+| Backend           | Spring Boot      |
+| Frontend          | React            |
+| AI Integration    | Gemini AI        |
+| Browser Extension | Chrome Extension |
+| Communication     | REST APIs        |
+| HTTP Client       | WebClient        |
+| API Testing       | Postman          |
 
 ---
 
-### Screenshots  
+### Architecture
 
-Below are the key components of **AIMailFlow** shown in a logical order, starting from the **end-user experience** to the **underlying implementation**.  
+```text
+                         AIMailFlow Architecture
 
-#### AI Reply in Gmail
+┌─────────────────────────────────────────────────────────────────┐
+│                         User Interface                          │
+│                                                                 │
+│      ┌──────────────────┐          ┌──────────────────┐         │
+│      │      Gmail       │          │  React Frontend  │         │
+│      └────────┬─────────┘          └────────┬─────────┘         │
+│               │                             │                   │
+│      ┌────────▼─────────┐                   │                   │
+│      │ Chrome Extension │                   │                   │
+│      │    (AI Reply)    │                   │                   │
+│      └────────┬─────────┘                   │                   │
+└───────────────┼─────────────────────────────┼───────────────────┘
+                │                             │
+                │         REST APIs           │
+                └──────────────┬──────────────┘
+                               │
+                     ┌─────────▼─────────┐
+                     │   Spring Boot     │
+                     │     Backend       │
+                     │                   │
+                     │ Email Controller  │
+                     │ Email Service     │
+                     └─────────┬─────────┘
+                               │
+                           WebClient
+                               │
+                     ┌─────────▼─────────┐
+                     │     Gemini AI     │
+                     │       API         │
+                     └─────────┬─────────┘
+                               │
+                        Generated Reply
+                               │
+                     ┌─────────▼─────────┐
+                     │   Spring Boot     │
+                     │     Backend       │
+                     └─────────┬─────────┘
+                               │
+                           REST Response
+                               │
+                  ┌────────────┴────────────┐
+                  ▼                         ▼
+          Chrome Extension          React Frontend
+                  │
+                  ▼
+          Gmail Compose Box
+```
+
+### Application Screenshots
+
+#### 1. AI Reply in Gmail
 
 <img width="1486" height="644" alt="image" src="https://github.com/user-attachments/assets/52f18005-dee4-40be-ad52-7eaab2651571" />
 
@@ -61,13 +95,13 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-### Chrome Extension
+#### 2. Chrome Extension
 
 <img width="1009" height="626" alt="Screenshot 2025-08-29 031232" src="https://github.com/user-attachments/assets/55c94846-9299-4cc2-9616-599bdbaa8815" />
 
 ---
 
-#### Frontend Service
+#### 3. Web Interface
 
 <img width="1429" height="886" alt="image" src="https://github.com/user-attachments/assets/6bb40bb4-55f7-46a8-a32c-774039af2634" />
 
@@ -79,7 +113,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-#### Backend Service 
+#### 4. Backend API
 
 <img width="1502" height="648" alt="image" src="https://github.com/user-attachments/assets/5dcfbcc3-bf2b-4114-97e9-a8431aa3ad7a" />
 
@@ -87,7 +121,7 @@ Below are the key components of **AIMailFlow** shown in a logical order, startin
 
 ---
 
-#### Postman Testing
+#### 5. API Testing
 
 <img width="1417" height="657" alt="image" src="https://github.com/user-attachments/assets/0baf852f-7de6-4a6e-8a24-52b2170a3784" />
 
