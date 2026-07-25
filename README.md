@@ -1,14 +1,14 @@
-## AIMailFlow
+# AIMailFlow
 
 ---
 
-### Project Overview
+## Project Overview
 
 AIMailFlow is an AI-powered email response system that generates context-aware email replies using **Gemini AI**. The application is built using **Spring Boot** for the backend and **React** for the frontend, with a **Chrome Extension** integrated into Gmail for generating AI-assisted replies directly within the email interface. The backend processes email content, communicates with Gemini AI, and returns generated responses through REST APIs.
 
 ---
 
-### Key Features
+## Key Features
 
 * AI-powered email reply generation using **Gemini AI**
 * Context-aware responses based on email content and selected tone
@@ -18,7 +18,7 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
 
 ---
 
-### Tech Stack
+## Tech Stack
 
 | Category          | Technologies     |
 | ----------------- | ---------------- |
@@ -32,7 +32,7 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
 
 ---
 
-### Architecture
+## Architecture
 
 ```text
                          AIMailFlow Architecture
@@ -85,9 +85,9 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
           Gmail Compose Box
 ```
 
-### Application Screenshots
+## Application Screenshots
 
-#### 1. AI Reply in Gmail
+### 1. AI Reply in Gmail
 
 <img width="1486" height="644" alt="image" src="https://github.com/user-attachments/assets/52f18005-dee4-40be-ad52-7eaab2651571" />
 
@@ -95,13 +95,13 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
 
 ---
 
-#### 2. Chrome Extension
+### 2. Chrome Extension
 
 <img width="1009" height="626" alt="Screenshot 2025-08-29 031232" src="https://github.com/user-attachments/assets/55c94846-9299-4cc2-9616-599bdbaa8815" />
 
 ---
 
-#### 3. Web Interface
+### 3. Web Interface
 
 <img width="1429" height="886" alt="image" src="https://github.com/user-attachments/assets/6bb40bb4-55f7-46a8-a32c-774039af2634" />
 
@@ -113,7 +113,7 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
 
 ---
 
-#### 4. Backend API
+### 4. Backend API
 
 <img width="1502" height="648" alt="image" src="https://github.com/user-attachments/assets/5dcfbcc3-bf2b-4114-97e9-a8431aa3ad7a" />
 
@@ -121,7 +121,7 @@ AIMailFlow is an AI-powered email response system that generates context-aware e
 
 ---
 
-#### 5. API Testing
+### 5. API Testing
 
 <img width="1417" height="657" alt="image" src="https://github.com/user-attachments/assets/0baf852f-7de6-4a6e-8a24-52b2170a3784" />
 
